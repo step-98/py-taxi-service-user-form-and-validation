@@ -18,6 +18,7 @@ class DriverLicenseUpdateForm(forms.ModelForm):
         required=True,
         validators=[LICENCE_VALIDATOR],
     )
+
     class Meta:
         model = get_user_model()
         fields = ("license_number", )
